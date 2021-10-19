@@ -1,0 +1,30 @@
+<html>
+<head>
+	<title> JQuery Test  </title>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script type = "text/javascript">
+
+		    // ready func call when document is ready to render
+         $(document).ready(function() 
+         {     
+               // After
+               $('#btnAfter').click(function(){
+                  $('#bdy').after("<h3><b> This is After Text</b></h3>");
+               });
+
+               // Before
+               $('#btnBefore').click(function(){
+                  $('#bdy').before("<h3><b> This is Before Text</b></h3>");
+               });
+         });
+     </script>
+<head>
+   <body>
+   <div id="bdy">
+      <h1> JQuery Information</h1>
+      <p>jQuery is a JavaScript library designed to simplify HTML DOM</p>
+   </div>
+   <button id="btnAfter"> After</button> 
+   <button id="btnBefore"> Before</button>
+</body>
+</html>
